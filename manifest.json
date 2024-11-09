@@ -1,19 +1,32 @@
-
 {
     "manifest_version": 3,
-    "name": "Eco-Friendly Clothing",
-    "description": "A chrome extension which enables users to see if their clothing choice is eco-friendly.",
+    "name": "Clothing Eco Checker",
     "version": "1.0",
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": {
-        "16": "icons/icon16.png",
-        "48": "icons/icon48.png",
-        "128": "icons/icon128.png"
-      }
-    },
+    "description": "Scrapes clothing descriptions and checks if they are eco-friendly.",
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
     "background": {
-      "service_worker": "background.js"
+        "service_worker": "background.js"
     },
-    "permissions": ["activeTab"]
-  }
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icons/grass.png",
+            "48": "icons/grass.png",
+            "128": "icons/grass.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "icons": {
+        "16": "icons/grass.png",
+        "48": "icons/grass.png",
+        "128": "icons/grass.png"
+    }
+}

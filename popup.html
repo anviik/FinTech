@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Extension</title>
+    <title>Clothing Eco Checker</title>
     <style>
       body {
-        width: 200px;
+        width: 300px;
         padding: 10px;
+      }
+      .eco-status {
+        font-weight: bold;
+        color: green;
       }
     </style>
   </head>
   <body>
-    <h3>Welcome to My Extension!</h3>
-    <button id="clickMe">Click Me!</button>
+    <h3>Product Eco Status</h3>
+    <p><strong>Description:</strong></p>
+    <p id="description">Loading...</p>
+    <p><strong>Status:</strong></p>
+    <p id="eco-status" class="eco-status">Loading...</p>
     <script src="popup.js"></script>
   </body>
 </html>
