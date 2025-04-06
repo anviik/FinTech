@@ -1,0 +1,51 @@
+.RecentActivity {
+    width: 90%;
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    overflow-x: auto;
+  }
+  
+  .activityTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .activityRow {
+    border-bottom: 1px solid #eee;
+  }
+  
+  .activityImgCell {
+    width: 60px;
+    padding: 0.5rem;
+  }
+  
+  .activityImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .activityInfoCell {
+    padding: 0.5rem;
+    text-align: left;
+  }
+  
+  .activityName {
+    font-weight: 600;
+  }
+  
+  .activityMessage {
+    font-size: 0.85rem;
+    color: #555;
+  }
+  
+  .activityTimeCell {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    color: gray;
+    text-align: right;
+    white-space: nowrap;
+  }
+  
